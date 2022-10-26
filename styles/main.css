@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+	/* Primary */
+
+	--Pink: hsl(322, 100%, 66%);
+	--LightPink: hsl(321, 100%, 78%);
+	--LightRed: hsl(0, 100%, 63%);
+
+	/* Neutral */
+
+	--VeryDarkCyan: hsl(192, 100%, 9%);
+	--VeryPaleBlue: hsl(207, 100%, 98%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+/* Utils */
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	width: 300px;
+	height: 4rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: var(--Pink);
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+	box-shadow: 0 10px 20px 0 var(--VeryPaleBlue);
+}
+
+button:hover {
+	cursor: pointer;
+}
+/* Header */
+header {
+	border: 1px solid black;
+	min-width: 100vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Section */
+section {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.section-a > * {
+	margin: 1rem 0;
+}
+
+.section-a > h1 {
+	font-size: 3rem;
+	font-family: 'Poppins';
+	font-weight: 700;
+}
+
+.section-a > p {
+	width: 50%;
+	font-size: 18px;
+}
